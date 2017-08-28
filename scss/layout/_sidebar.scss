@@ -1,0 +1,169 @@
+sidebar {
+    float: left;
+    padding: 25px 1.04% 25px 2.29%;
+    width: 22.9%;
+}
+
+/* CATEGORIES */
+
+#categories {
+    
+    margin-bottom: 80px;
+    
+    li {
+        margin-top: 7px;
+        text-decoration: underline;
+        list-style-image: url(img/dash.png);
+        list-style-position: outside;
+        
+        a {
+            color: #8c8c8c;
+            
+            &:hover {
+                color: $color-href;
+            }
+        }
+    }
+}
+
+.ui-accordion {
+    font-size: 14px;
+    
+    .ui-accordion-header {
+        padding: 5px 20px;
+        
+        &:focus {
+            border: none;
+            outline: none;
+        }
+    }
+    
+    .ui-accordion-content {
+        padding: 5px 0px 5px 30px;
+    }
+}
+
+.ui-accordion-header {
+    border-radius: 0;
+    border: none;
+    text-decoration: underline;
+    background-color: #f3f2f0;
+    color: $color;
+}
+
+.ui-state-active {
+    border: none;
+    background-color: #ed6d3b;
+    text-decoration: none;
+    color: #fff
+}
+
+.ui-widget-content {
+    border: none;
+    background-color: #f8f8f8;
+    font-size: 13px;
+    color: #8c8c8c;
+}
+
+/* NEWS */
+
+.news {
+    margin-bottom: 40px;
+    
+    div {
+        margin-bottom: 25px;
+        
+        h3 {
+            font-size: 14px;
+            margin-bottom: 5px;
+            
+            a {
+                color: $color;
+            }
+        }
+        
+        p {
+            color: #7d7d7d;
+        }
+    }
+}
+
+/* WRITE TO US */
+
+.write-us {
+    width: 210px;
+    height: 48px;
+    border: none;
+    border-radius: 2px;
+    background-color: #ed6d3b;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    
+    img {
+        margin-left: 20px;
+        vertical-align: middle;
+    }
+    
+    &:focus {
+        outline: none;
+        border: none;
+    }
+    
+    &:hover {
+        background-color: $color-href;
+    }
+    
+    &:active {
+        background-color: #ec581e;
+    }
+}
+
+#write-us {
+    padding: 40px;
+    
+    input {
+        width: 60%;
+        margin-bottom: 20px;
+        padding: 2% 3%;
+        font-size: 14px;
+        color: $color;
+        
+        &:focus {
+            border: 1px solid $color-href;
+            outline: 1px solid $color-href;
+        }
+    }
+    
+    textarea {
+        width: 94%;
+        margin-bottom: 20px;
+        padding: 2% 3%;
+        font-size: 14px;
+        color: $color;
+        
+        &:focus {
+            border: 1px solid $color-href;
+            outline: 1px solid $color-href;
+        }
+    }
+    
+    button {
+        
+        &:active, &:focus {
+            background-color: $color-href;
+            border: none;
+            outline: none;
+        }
+    }
+}
+
+/* BANNER */
+
+.banner {
+    width: 210px;
+	height: 245px;
+    background-color: $color;
+    margin-top: 30px;
+    opacity: .35;
+}

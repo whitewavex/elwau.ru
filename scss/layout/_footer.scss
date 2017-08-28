@@ -1,0 +1,48 @@
+/* NAVIGATION */
+
+.nav-footer {
+    background-color: #f8f8f8;
+    width: 100%;
+    overflow: hidden;
+    
+    li {
+        font-size: 13px;
+        
+        a {
+            color: #747474;
+            border-bottom: 1px solid #747474;
+        }
+    }
+}
+
+/* FOOTER-INFO */
+
+.footer-info {
+    padding: 15px 30px 65px 30px;
+    font-size: 13px;
+    color: #747474;
+    line-height: 1.7;
+    overflow: hidden;
+    
+    a {
+        color: #747474;
+    }
+}
+
+.footer-contacts {
+    float: left;
+    margin-right: 25px;
+}
+
+.footer-center{
+    float: left;
+    
+    div {
+        float: left;
+        margin-left: 15px;
+    }
+}
+
+.disign {
+    float: right;
+}

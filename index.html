@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="nav-button" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+            <div class="overlay" id="overlay">
+                <nav class="overlay-menu">
+                    <ul class="nav">
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Наши магазины</a></li>
+                        <li><a href="#">Оптовикам</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <form class="search" action="">
+                <input type="text" placeholder="Поиск по каталогу">
+                <input type="image" src="img/search.png">
+            </form>
+            <div class="both"></div>
+        </div>
+        <div class="header-panel">
+            <img class="logo" src="img/logo.png" alt="">
+            <div class="header-contacts">
+                <div class="phone">
+                    <img src="img/phone.png" alt="">
+                    <a href="">(495) <span>234-22-33</span>, (495) <span>232-22-35</span></a>
+                </div>
+                <div class="messages">
+                    <div>
+                        <img src="img/mail.png" alt="">
+                        <a href="">Написать сообщение</a>
+                    </div>
+                    <div>
+                        <img src="img/icq.png" alt="">
+                        <a href="">288-22-08</a>
+                    </div>
+                </div>
+            </div>
+            <ul class="account">
+                <li>
+                    <a href="">В вашей корзине пусто</a>
+                </li>
+                <li>
+                    <a class="sign-form" href="">Войти в личный кабинет</a>
+                </li>
+            </ul>
+            <div class="both"></div>
+            <div id="sign-in" title="Вход в аккаунт">
+                <form action="">
+                    <input type="text">
+                    <input type="password">
+                    <button class="sing-in">Войти</button>
+                </form>
+                <p><a href="#">Регистрация</a></p>
+            </div>
+        </div>
+    </header>
+    <div class="catalog">
+        <button>Каталог товаров</button>
+            <div id="catalog"  title="Выберите категорию">
+                <ul>
+                    <li><a href="#">Автомодели</a></li>
+                    <li><a href="#">Самолеты</a></li>
+                    <li><a href="#">Вертолеты</a></li>
+                    <li><a href="#">Аккумуляторы, кабели</a></li>
+                    <li><a href="#">Аппаратура</a></li>
+                    <li><a href="#">Инструмент, материалы</a></li>
+                    <li><a href="#">Винты, крепеж, клей</a></li>
+                    <li><a href="#">Двигатели ДВС</a></li>
+                    <li><a href="#">Электродвигатели</a></li>
+                    <li><a href="#">Катера, яхты</a></li>
+                </ul>
+            </div>
+    </div>
+    <div class="content">
+        <main>
+            <div class="carousel">
+                <div class="carousel-product">
+                    <div>
+                        <h3>Электрический мини-вертолет Beacon</h3>
+                        <table>
+                            <tr>
+                                <td>Тип:</td>
+                                <td>мини вертолет</td>
+                            </tr>
+                            <tr>
+                                <td>Шасси:</td>
+                                <td>пластик</td>
+                            </tr>
+                            <tr>
+                                <td>Электродвигатели:</td>
+                                <td>180 размера (2 шт.)</td>
+                            </tr>
+                            <tr>
+                                <td>Время полёта:</td>
+                                <td>10 - 12 минут</td>
+                            </tr>
+                        </table>
+                        <div class="cost">
+                            <p>Цена:  <span class="price">6 960</span> <span class="currency">рублей</span></p>
+                            <button>В корзину</button>
+                            <div class="both"></div>
+                        </div>
+                    </div>
+                    <img src="img/slider-img-1.png" alt="">
+                </div>
+                <div class="carousel-product">
+                    <div>
+                        <h3>Электрический мини-вертолет HM60#B</h3>
+                        <table>
+                            <tr>
+                                <td>Тип:</td>
+                                <td>мини вертолет</td>
+                            </tr>
+                            <tr>
+                                <td>Шасси:</td>
+                                <td>пластик</td>
+                            </tr>
+                            <tr>
+                                <td>Электродвигатели:</td>
+                                <td>160 размера (2 шт.)</td>
+                            </tr>
+                            <tr>
+                                <td>Время полёта:</td>
+                                <td>8 - 10 минут</td>
+                            </tr>
+                        </table>
+                        <div class="cost">
+                            <p>Цена:  <span class="price">5 770</span> <span class="currency">рублей</span></p>
+                            <button>В корзину</button>
+                            <div class="both"></div>
+                        </div>
+                    </div>
+                    <img src="img/slider-img-2.png" alt="">
+                </div>
+                <div class="carousel-product">
+                    <div>
+                        <h3>Электрический мини-вертолет Slide</h3>
+                        <table>
+                            <tr>
+                                <td>Тип:</td>
+                                <td>мини вертолет</td>
+                            </tr>
+                            <tr>
+                                <td>Шасси:</td>
+                                <td>пластик</td>
+                            </tr>
+                            <tr>
+                                <td>Электродвигатели:</td>
+                                <td>200 размера (2 шт.)</td>
+                            </tr>
+                            <tr>
+                                <td>Время полёта:</td>
+                                <td>10 - 15 минут</td>
+                            </tr>
+                        </table>
+                        <div class="cost">
+                            <p>Цена:  <span class="price">8 330</span> <span class="currency">рублей</span></p>
+                            <button>В корзину</button>
+                            <div class="both"></div>
+                        </div>
+                    </div>
+                    <img src="img/slider-img-1.png" alt="">
+                </div>
+            </div>
+            <div class="sale">
+                <h3>Распродажа</h3>
+                <div class="product margin-none">
+                    <div>
+                        <img src="img/sale-1.jpg" alt="">
+                        <p>18 480 р.</p>
+                    </div>
+                    <a href="#">CYCLONE D4 WORLD<br> CHAMPIONSHIP EDITION KIT</a>
+                </div>
+                <div class="product margin-none">
+                    <div>
+                        <img src="img/sale-2.jpg" alt="">
+                        <p>5 712 р.</p>
+                    </div>
+                    <a href="#">Кордовая модель-копия<br> PT-19 Profile Control Line 36<br> ARF</a>
+                </div>
+                <div class="product margin-none">
+                    <div>
+                        <img src="img/sale-3.jpg" alt="">
+                        <p>18 240 р.</p>
+                    </div>
+                    <a href="#">Электрический<br> мини-вертолет HM 60#B</a>
+                </div>
+            </div>
+            <div class="sale">
+                <h3 class="hits">Хиты продаж</h3>
+                <div class="product">
+                    <div>
+                        <img src="img/sale-1.jpg" alt="">
+                        <p>18 480 р.</p>
+                    </div>
+                    <a href="#">CYCLONE D4 WORLD<br> CHAMPIONSHIP EDITION KIT</a>
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="img/sale-3.jpg" alt="">
+                        <p>18 240 р.</p>
+                    </div>
+                    <a href="#">Электрический<br> мини-вертолет HM 60#B</a>
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="img/sale-2.jpg" alt="">
+                        <p>5 712 р.</p>
+                    </div>
+                    <a href="#">Кордовая модель-копия<br> PT-19 Profile Control Line 36<br> ARF</a>
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="img/sale-3.jpg" alt="">
+                        <p>18 240 р.</p>
+                    </div>
+                    <a href="#">Электрический<br> мини-вертолет HM 60#B</a>
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="img/sale-2.jpg" alt="">
+                        <p>5 712 р.</p>
+                    </div>
+                    <a href="#">Кордовая модель-копия<br> PT-19 Profile Control Line 36<br> ARF</a>
+                </div>
+                <div class="product">
+                    <div>
+                        <img src="img/sale-1.jpg" alt="">
+                        <p>18 480 р.</p>
+                    </div>
+                    <a href="#">CYCLONE D4 WORLD<br> CHAMPIONSHIP EDITION KIT</a>
+                </div>
+            </div>
+            <div class="reviews">
+                <h3>Последние обзоры</h3>
+                <div>
+                    <img src="img/review.jpg" alt="">
+                    <h4><a href="#">Наша компания организовала тест на прочность и выносливость эктрическому мини-вертолету HM60#B</a></h4>
+                    <p>Было приглашено около 30 человек, но зрителей собралось в разы больше. Место проведения теста - площадь. Зрители смотрели как на шоу, маневры и падения вертолета сопровождались возгласами, вот вот и ходила бы волна по зрителям.</p>
+                </div>
+                <div>
+                    <img src="img/review.jpg" alt="">
+                    <h4><a href="#">Наша компания организовала тест на прочность и выносливость эктрическому мини-вертолету HM60#B</a></h4>
+                    <p>Было приглашено около 30 человек, но зрителей собралось в разы больше. Место проведения теста - площадь. Зрители смотрели как на шоу, маневры и падения вертолета сопровождались возгласами, вот вот и ходила бы волна по зрителям.</p>
+                </div>
+            </div>
+            <div class="about">
+                <h3>О компании</h3>
+                <p>История компании elwau.ru – один из примеров сочетания творческого подхода с чрезвычайной практичностью. Знаменитая идея братьев Венинг – оснастить различные виды транспорта мобильными холодильниками – в 70-х годах прошлого века перешагнула стандарты инженерного мышления. Что же до применения этой и множества других разработок – автохолодильники автокондиционеры, автопылесосы, автокофеварки elwau.ru – то здесь братья-изобретатели блестяще продемонстрировали свои организаторские таланты.<a href="#">читать дальше</a></p>
+            </div>
+        </main>
+        <sidebar>
+            <div id="categories">
+                <h3>Автомодели</h3>
+                <ul>
+                    <li><a href="#">Категория 1</a></li>
+                    <li><a href="#">Категория 2</a></li>
+                    <li><a href="#">Категория 3</a></li>
+                    <li><a href="#">Категория 4</a></li>
+                </ul>
+                <h3>Самолёты</h3>
+                <ul>
+                    <li><a href="#">Категория 1</a></li>
+                    <li><a href="#">Категория 2</a></li>
+                    <li><a href="#">Категория 3</a></li>
+                    <li><a href="#">Категория 4</a></li>
+                </ul>
+                <h3>Вертолеты</h3>
+                <ul>
+                    <li><a href="#">Для начинающих (Соосные)</a></li>
+                    <li><a href="#">С электродвигателем</a></li>
+                    <li><a href="#">Вертолеты с ДВС</a></li>
+                    <li><a href="#">Вертолеты Mikado</a></li>
+                </ul>
+                <h3>Аккумуляторы, кабели</h3>
+                <ul>
+                    <li><a href="#">Категория 1</a></li>
+                    <li><a href="#">Категория 2</a></li>
+                    <li><a href="#">Категория 3</a></li>
+                    <li><a href="#">Категория 4</a></li>
+                </ul>
+                <h3>Аппаратура</h3>
+                <ul>
+                    <li><a href="#">Категория 1</a></li>
+                    <li><a href="#">Категория 2</a></li>
+                    <li><a href="#">Категория 3</a></li>
+                    <li><a href="#">Категория 4</a></li>
+                </ul>
+                <h3>Инструмент, материалы</h3>
+                <ul>
+                    <li><a href="#">Категория 1</a></li>
+                    <li><a href="#">Категория 2</a></li>
+                    <li><a href="#">Категория 3</a></li>
+                    <li><a href="#">Категория 4</a></li>
+                </ul>
+                <h3>Винты, крепеж, клей</h3>
+                <ul>
+                    <li><a href="#">Категория 1</a></li>
+                    <li><a href="#">Категория 2</a></li>
+                    <li><a href="#">Категория 3</a></li>
+                    <li><a href="#">Категория 4</a></li>
+                </ul>
+                <h3>Двигатели ДВС</h3>
+                <ul>
+                    <li><a href="#">Категория 1</a></li>
+                    <li><a href="#">Категория 2</a></li>
+                    <li><a href="#">Категория 3</a></li>
+                    <li><a href="#">Категория 4</a></li>
+                </ul>
+                <h3>Электродвигатели</h3>
+                <ul>
+                    <li><a href="#">Категория 1</a></li>
+                    <li><a href="#">Категория 2</a></li>
+                    <li><a href="#">Категория 3</a></li>
+                    <li><a href="#">Категория 4</a></li>
+                </ul>
+                <h3>Катера, яхты</h3>
+                <ul>
+                    <li><a href="#">Категория 1</a></li>
+                    <li><a href="#">Категория 2</a></li>
+                    <li><a href="#">Категория 3</a></li>
+                    <li><a href="#">Категория 4</a></li>
+                </ul>
+            </div>
+            <div class="news">
+                <div>
+                    <p>12.10.2011</p>
+                    <h3><a href="#">Много скидок!</a></h3>
+                    <p>Скоро ноябрь, а это значит, что скоро вас ждет большое количество скидок в связи с нашим юбелеем.</p>
+                </div>
+                <div>
+                    <p>12.10.2011</p>
+                    <h3><a href="#">Обменяй старое на новое!</a></h3>
+                    <p>Скоро ноябрь, а это значит, что скоро вас ждет большое количество скидок в связи с нашим юбелеем.</p>
+                </div>
+                <div>
+                    <p>12.10.2011</p>
+                    <h3><a href="#">Обновление в каталогах!</a></h3>
+                    <p>Скоро ноябрь, а это значит, что скоро вас ждет большое количество скидок в связи с нашим юбелеем.</p>
+                </div>
+            </div>
+            <button class="write-us">Написать нам<img src="img/pencil.png" alt=""></button>
+            <div class="banner"></div>
+            <div class="banner"></div>
+            <div id="write-us" title="Напишите сообщение">
+                <form action="">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="email" placeholder="Ваш email">
+                    <textarea name="" rows="10" placeholder="Текст сообщения..."></textarea>
+                    <button class="submit">Отправить</button>
+                    <button class="cancel">Отмена</button>
+                </form>
+            </div>
+        </sidebar>
+        <div class="both"></div>
+    </div>
+    <footer>
+        <div class="nav-footer">
+            <ul class="nav">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Наши магазины</a></li>
+                <li><a href="#">Оптовикам</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <div class="footer-contacts">
+                <p>© 2007-2011 Интернет-супермаркет «<a href="#">Elwau.ru</a>»</p>
+                <p>Адрес: 105118, г.Москва, ул. Кирпичная, д. 22</p>
+                <p>Тел.: +7 (495) 540-55-11, 8 (800) 555-55-90</p>
+                <p>Email: info@elwau.ru</p>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <img src="img/liveinternet.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/liveinternet.jpg" alt="">
+                </div>
+            </div>
+            <p class="disign">Дизайн сайта - <a href="#">Плюснин Никита</a></p>
+        </div>
+    </footer>
+</body>
+</html>
